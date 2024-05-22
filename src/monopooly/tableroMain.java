@@ -45,7 +45,7 @@ public class tableroMain extends javax.swing.JFrame {
             this.jugadores = new JPanel[numeroJugadores];
             this.jugadoresObjetos = new Jugador[numeroJugadores];
             this.posicionesJugadores = new int[numeroJugadores];
-        inicializarJugadores(60);
+        inicializarJugadores(1500);
         
     ////Instancias    
         juego = new Juego(jugadoresObjetos, bienesJugador, mapaCasillas, turnoActual);
