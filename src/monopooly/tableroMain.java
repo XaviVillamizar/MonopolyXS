@@ -1123,6 +1123,9 @@ public class tableroMain extends javax.swing.JFrame {
         // TODO add your handling code here:
         comprarCasilla.setEnabled(true);
         lanzarDado.setEnabled(false);
+
+        juego.setTurnoActual(turnoActual);
+        juego.actualizarInfoJugador();
     }//GEN-LAST:event_lanzarDadoActionPerformed
 
     private void comprarCasillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarCasillaActionPerformed
@@ -1146,6 +1149,7 @@ public class tableroMain extends javax.swing.JFrame {
     eventosTablero.append("\n");
     eventosTablero.append("Nuevo turno: Jugador " + (turnoActual + 1));
 
+    juego.setTurnoActual(turnoActual);
     juego.actualizarInfoJugador();
     }//GEN-LAST:event_cancelarCompraActionPerformed
 
